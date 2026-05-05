@@ -1,11 +1,14 @@
 import requests
+import sys
+
+
 
 #postman mock server url and endpoint
-base_url = "POSTMAN_MOCK_URL_HERE"
+base_url = "POSTMAN_MOCK_SERVER_URL"
 endpoint = "/fleet/vehicles" 
 
 #postman API key
-api_key = "POSTMAN_API_KEY_HERE"
+api_key = "POSTMAN_API_KEY"
 credential = {"X-API-Key": api_key}
 
 #make the API call
@@ -17,6 +20,10 @@ vehicles = data["data"]
 
 alerts = []
 active_count = 0
+
+# Open file and redirect all print outputo to it
+report_file = open("fleet_report.txt", "w")
+sys.stdout = report_file
 
 print("=================================================================")
 print("                   FLEET ANALYSIS REPORT")
@@ -76,5 +83,7 @@ print("Active:         " + str(active_count))
 print("Alerts triggered: " + str(len(alerts)))
 print("\n=================================================================")
 
-
-print ("Done")
+# Close the file and restore terminal output
+report_file.close()
+sys.stdout = sys.__stdout__
+print("Report generated: fleet_report.txt")
