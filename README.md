@@ -87,5 +87,5 @@ The script requires no other changes.
 ## Author
 
 Gage Matzen
-</>Built as a portfolio project for a Sales Engineer role at Samsara
+<br> Built as a portfolio project for a Sales Engineer role at Samsara
 
