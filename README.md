@@ -53,19 +53,19 @@ python fleet_check.py
 ## Sample Output
 
 =================================================================
-FLEET ANALYSIS REPORT
-VEHICLE STATUS
-Truck 14 | Engine: On | Fuel: 62% | Speed: 0 mph | Driver: Maria Santos
-Truck 15 | Engine: On | Fuel: 18% | Speed: 47 mph | Driver: James Okafor
-Truck 16 | Engine: Off | Fuel: 91% | Speed: 0 mph | Driver: Unassigned
-ALERTS
-WARNING - Truck 14: IDLING (engine on, speed 0)
-WARNING - Truck 15: LOW FUEL (18%)
-WARNING - Truck 16: NO DRIVER ASSIGNED
-SUMMARY
-Total vehicles:   3
-Active:           2
-Alerts triggered: 3
+'''FLEET ANALYSIS REPORT
+'''VEHICLE STATUS
+'''Truck 14 | Engine: On | Fuel: 62% | Speed: 0 mph | Driver: Maria Santos
+'''Truck 15 | Engine: On | Fuel: 18% | Speed: 47 mph | Driver: James Okafor
+'''Truck 16 | Engine: Off | Fuel: 91% | Speed: 0 mph | Driver: Unassigned
+'''ALERTS
+'''WARNING - Truck 14: IDLING (engine on, speed 0)
+'''WARNING - Truck 15: LOW FUEL (18%)
+'''WARNING - Truck 16: NO DRIVER ASSIGNED
+'''SUMMARY
+'''Total vehicles:   3
+'''Active:           2
+'''Alerts triggered: 3
 
 ---
 
