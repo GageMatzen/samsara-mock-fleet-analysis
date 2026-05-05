@@ -27,24 +27,24 @@ Idling and low fuel are two of the highest operational costs in fleet management
 - Python 3.x installed
 - 'requests' library installed
 
-'''bash
+```bash
 pip install requests
-'''
+```
 
 ### Setup
 1. Clone this repository
 2. Open 'fleet_check.py'
 3. Replace the placeholder credentials with your own:
 
-'''python
+```python
 base_url = "YOUR_POSTMAN_MOCK_URL_HERE"   # or https://api.samsara.com
 api_key  = "YOUR_POSTMAN_API_KEY_HERE"    # or your Samsara API token
-'''
+```
 4. Run the script:
 
-'''bash
+```bash
 python fleet_check.py
-'''
+```
 
 5. Open 'fleet_report.txt' to view the generated report
 
@@ -53,19 +53,19 @@ python fleet_check.py
 ## Sample Output
 
 =================================================================
-'''FLEET ANALYSIS REPORT
-'''VEHICLE STATUS
-'''Truck 14 | Engine: On | Fuel: 62% | Speed: 0 mph | Driver: Maria Santos
-'''Truck 15 | Engine: On | Fuel: 18% | Speed: 47 mph | Driver: James Okafor
-'''Truck 16 | Engine: Off | Fuel: 91% | Speed: 0 mph | Driver: Unassigned
-'''ALERTS
-'''WARNING - Truck 14: IDLING (engine on, speed 0)
-'''WARNING - Truck 15: LOW FUEL (18%)
-'''WARNING - Truck 16: NO DRIVER ASSIGNED
-'''SUMMARY
-'''Total vehicles:   3
-'''Active:           2
-'''Alerts triggered: 3
+```FLEET ANALYSIS REPORT
+```VEHICLE STATUS
+```Truck 14 | Engine: On | Fuel: 62% | Speed: 0 mph | Driver: Maria Santos
+```Truck 15 | Engine: On | Fuel: 18% | Speed: 47 mph | Driver: James Okafor
+```Truck 16 | Engine: Off | Fuel: 91% | Speed: 0 mph | Driver: Unassigned
+```ALERTS
+```WARNING - Truck 14: IDLING (engine on, speed 0)
+```WARNING - Truck 15: LOW FUEL (18%)
+```WARNING - Truck 16: NO DRIVER ASSIGNED
+```SUMMARY
+```Total vehicles:   3
+```Active:           2
+```Alerts triggered: 3
 
 ---
 
