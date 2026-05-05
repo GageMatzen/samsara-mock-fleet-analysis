@@ -66,7 +66,7 @@ SUMMARY
 Total vehicles:   3
 Active:           2
 Alerts triggered: 3
-
+```
 ---
 
 ## How This Maps to Samsara's Real API
